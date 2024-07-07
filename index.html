@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('photos')">Photos</button>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container active">
+            <h2>Home</h2>
+            <pre>
+Heya! Welcome to the my website
+            </pre>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <pre>You can contact me by sending a message to hexyvision@gmail.com</pre>
+        </section>
+
+        <section id="photos" class="container">
+            <h2>Photos</h2>
+            <pre>Here are some beautiful photos</pre>
+            <div class="thumbnail-container">
+                <!-- Thumbnails will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <pre>I'm Hexy. I develop simple, minimal and smooth-running web applications through AI (GPT-4o)</pre>
+        </section>
+    </main>
+    <div class="full-screen">
+        <img src="" alt="Fullscreen Image">
+        <div class="exit-button">&#10005;</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
