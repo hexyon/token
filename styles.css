@@ -42,7 +42,7 @@ nav button:hover {
 }
 
 main {
-    padding-top: 5rem; /* Adjusted padding to accommodate fixed header */
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -52,7 +52,7 @@ main {
 p, pre {
     margin-bottom: 1rem;
     line-height: 1.6;
-    white-space: pre-line; /* Preserve whitespace and line breaks */
+    white-space: pre-line;
 }
 
 .container {
@@ -65,8 +65,8 @@ p, pre {
     margin: 2rem auto;
     position: relative;
     display: none;
-    overflow-y: auto; /* Allow scrolling within the container */
-    max-height: calc(100vh - 7rem); /* Ensure it fits within the view */
+    overflow-y: auto;
+    max-height: calc(100vh - 7rem);
 }
 
 .container.active {
@@ -78,14 +78,14 @@ p, pre {
 .fullscreen-icon {
     position: absolute;
     top: 40px;
-    right: -50px; /* Position it slightly outside the container */
+    right: -50px;
     font-size: 2rem;
     cursor: pointer;
-    display: none; /* Hide by default */
+    display: none;
 }
 
 .container.active + .fullscreen-icon {
-    display: block; /* Show when the corresponding container is active */
+    display: block;
 }
 
 .container h2 {
@@ -98,29 +98,29 @@ p, pre {
     margin-top: 0;
     color: #333333;
     font-size: 1.2rem;
-    white-space: pre-line; /* Preserve whitespace and line breaks */
+    white-space: pre-line;
 }
 
 /* Custom Scrollbar */
 .container::-webkit-scrollbar,
 .fullscreen-content::-webkit-scrollbar {
-    width: 7px; /* Width of the scrollbar */
+    width: 7px;
 }
 
 .container::-webkit-scrollbar-track,
 .fullscreen-content::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the scrollbar track */
+    background: #f1f1f1;
 }
 
 .container::-webkit-scrollbar-thumb,
 .fullscreen-content::-webkit-scrollbar-thumb {
-    background-color: #007aff; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #007aff;
+    border-radius: 10px;
 }
 
 .container::-webkit-scrollbar-thumb:hover,
 .fullscreen-content::-webkit-scrollbar-thumb:hover {
-    background-color: #0056b3; /* Color on hover */
+    background-color: #0056b3;
 }
 
 /* Thumbnail Styles */
@@ -174,4 +174,89 @@ p, pre {
     font-size: 2rem;
     color: white;
     cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav button {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+        margin: 0.2rem;
+    }
+
+    main {
+        padding-top: 4rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+        min-width: unset;
+        max-height: unset;
+    }
+
+    .container.active {
+        min-width: unset;
+        max-height: unset;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p, .container pre {
+        font-size: 1rem;
+    }
+
+    .thumbnail-container {
+        gap: 0.5rem;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+    }
+
+    .full-screen img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .exit-button {
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media screen and (max-width: 480px) {
+    nav button {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0.8rem;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 80px;
+    }
 }
