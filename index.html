@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-link active" data-section="home">Home</a>
+            <a href="#" class="nav-link" data-section="photos">Photos</a>
+            <a href="#" class="nav-link" data-section="about">About</a>
+            <a href="#" class="nav-link" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section id="home" class="section active">
+            <div class="content">
+                <h1 class="title">Welcome</h1>
+                <p class="text">Heya! Welcome to my website</p>
+            </div>
+        </section>
+
+        <section id="photos" class="section">
+            <div class="content">
+                <h1 class="title">Photos</h1>
+                <p class="text">Here are some beautiful pictures</p>
+                <div class="gallery"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="content">
+                <h1 class="title">About Me</h1>
+                <p class="text">I'm Hexy. I develop simple, minimal and smooth-running web applications through AI</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content">
+                <h1 class="title">Contact</h1>
+                <p class="text">You can contact me by sending a message to</p>
+                <a href="mailto:hexyvision@gmail.com" class="email">hexyvision@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="Full size image" class="lightbox-image">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
