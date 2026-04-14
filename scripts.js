@@ -1,15 +1,15 @@
 // Media URLs
 const media = [
-    'https://iili.io/dHJ6Ho7.jpg',
-    'https://iili.io/fbC3ezg.jpg',
-    'https://iili.io/fbBmuXp.png',
-    'https://iili.io/dHJSQpI.jpg',
-    'https://iili.io/KPb3RLu.jpg',
-    'https://iili.io/fbBygg1.jpg',
-    'https://iili.io/fbCdAQf.jpg',
-    'https://iili.io/fbCHqZv.jpg',
-    'https://iili.io/dHJ4ytS.jpg',
-    'https://iili.io/KPb7UBf.jpg'
+    'https://i.imgur.com/n35eIb2.jpeg',
+    'https://i.imgur.com/lE4Esat.jpeg',
+    'https://i.imgur.com/BtHqx2J.jpeg',
+    'https://i.imgur.com/6Bbc3wy.jpeg',
+    'https://i.imgur.com/hRXAHw1.jpeg',
+    'https://i.imgur.com/Mb6M6Mi.jpeg',
+    'https://i.imgur.com/4P5CFUF.jpeg',
+    'https://i.imgur.com/uyMr6X3.jpeg',
+    'https://i.imgur.com/bfJaep7.jpeg',
+    'https://i.imgur.com/gJNN3pz.jpeg'
 ];
 
 // Navigation
